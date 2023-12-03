@@ -1,0 +1,12 @@
+from google.colab import drive
+drive.mount('/content/drive')
+
+!pip install speechpy
+!pip install keras.utils
+!pip install np_utils
+
+import numpy as np
+import pandas as pd
+import librosa
+from speechpy.feature import mfcc
+from tensorflow.keras.utils import to_categorical
